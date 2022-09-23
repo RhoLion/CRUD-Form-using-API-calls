@@ -1,0 +1,82 @@
+main {
+    background-color: rgba(128, 128, 128, 0.052);
+    width: 90%;
+    height: auto;
+    margin: 50px 50px 0 100px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    align-content: center;
+  }
+  
+  main h5 {
+    margin: 100px 0 0 10px;
+  }
+  
+  form label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 5px;
+    min-height: 10px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  form input {
+    border-color: gray;
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgba(128, 128, 128, 0.264);
+  }
+  
+  form input:focus {
+    border: 2px solid red;
+  }
+  
+  .sexo{
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons{
+    display: inline-flex;
+    margin-left: -100px;
+    margin-right: 80px;
+  }
+  
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+  }
+  
+  .buttonContainer button{
+    width: 200px;
+    height: 60px;
+    margin: 0 50px 50px 10px;
+  }
+  
+  .cancelar{
+    background-color: rgba(128, 128, 128, 0.668);
+    border:none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 4px;
+  }
+  
+  .enviar{
+    background-color: rgb(187, 187, 42);
+    border:none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 4px;
+  }
+  
+  
