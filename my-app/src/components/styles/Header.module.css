@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    /* align-content: space-between; */
+    border-bottom-color: red;
+}
+
+.menu img{
+margin: 50px;
+width: 50px;
+}
+
+.grupoS{
+    margin-left: 35%;
+    margin-right: 30%;
+}
+
+.grupoS img {
+margin: 30px;
+width: 140px;
+}
+
+.user{
+ display: flex;
+ flex-direction: row;
+ margin-top: 40px;
+}
+
+
