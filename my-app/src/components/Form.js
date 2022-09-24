@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import styles from './styles/Form.module.css';
+import star from './assets/star.png';
 
 const Form = () => {
 
@@ -50,11 +51,11 @@ const Form = () => {
       </section>
 
       <main className={styles.formContainer}>
-        <p>Favor de completar los siguientes campos. Los campos con  *  son obligatorios</p>
+        <p>Favor de completar los siguientes campos. Los campos con <img src={star} alt='asteric' width='15px'/>  son obligatorios</p>
 
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">*Nombre(s):</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Nombre(s):</label>
             <input
               type='text'
               name='name'
@@ -64,7 +65,7 @@ const Form = () => {
               required></input>
           </div>
           <div>
-            <label htmlFor="name">*Apellido paterno:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Apellido paterno:</label>
             <input
               type='text'
               name='lastname'
@@ -74,7 +75,7 @@ const Form = () => {
               required></input>
           </div>
           <div>
-            <label htmlFor="name">*Apellido materno:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Apellido materno:</label>
             <input
               type='text'
               name='surename'
@@ -84,7 +85,7 @@ const Form = () => {
               required></input>
           </div>
           <div>
-            <label htmlFor="name">*Edad:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Edad:</label>
             <input
               type='number'
               name='age'
@@ -93,7 +94,7 @@ const Form = () => {
               required></input>
           </div>
           <div className={styles.sexo}>
-            <label className={styles.labelSex}>*Sexo:</label>
+            <label className={styles.labelSex}><img src={star} alt='asteric' width='15px'/>Sexo:</label>
             <div className={styles.buttons}>
               <input
                 type="radio"
