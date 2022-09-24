@@ -1,0 +1,15 @@
+
+PUT http://localhost:5000/userInfo/1
+Accept: application/json
+Content-Type: application/json
+If-Match: "pendiente"
+    {
+      "name": "rocio",
+      "lastname": "qqqqqq",
+      "surename": "leon",
+      "age": "22",
+      "sex": "masculino",
+      "email": "mesero1@gmail.com",
+      "phone": "5533600010",
+      "id": 6
+    },

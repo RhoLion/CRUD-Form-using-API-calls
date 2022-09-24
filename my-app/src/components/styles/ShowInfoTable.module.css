@@ -1,0 +1,40 @@
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+table {
+  width: 96%;
+  text-align: center;
+  border: none;
+  padding: 0;
+  border-collapse: collapse;
+  margin-right: 80px;
+}
+
+td {
+  background-color: rgba(128, 128, 128, 0.052);
+  font-size: x-large;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+thead {
+  border: solid 0.1em transparent;
+  border-bottom-color: gold;
+  font-size: x-large;
+}
+
+td button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: x-large;
+  color: rgba(126, 122, 122, 0.83);
+  cursor: pointer;
+}

@@ -1,48 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const ShowInfoTable = ({dataInfo}) => {
+import TableHeader from './commons/TableHeader';
+import EditForm from './EditForm';
+import ReadRows from './ReadRows';
+import styles from './styles/ShowInfoTable.module.css';
 
-   
+const ShowInfoTable = ({ dataInfo }) => {
+
+  const [editUserId, setEditUserId] = useState(null);
   return (
-    <div>
- <section >
-        <table>
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Apellido paterno</th>
-              <th>Apellido materno</th>
-              <th>edad</th>
-              <th>Sexo</th>
-              <th>Correo electrónico</th>
-              <th>Teléfono</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
+    <>
+      <form className={styles.tableContainer} >
+      <table>
+          <TableHeader />
+          <tbody> 
             {dataInfo &&
               dataInfo.map((item) => {
                 return (
                   <>
-                    <tr key={item.id}>
-                    <td >{item.name}</td>
-                      <td >{item.lastname}</td>
-                      <td >{item.surename}</td>
-                      <td >{item.age}</td>
-                      <td >{item.sex}</td>
-                      <td >{item.email}</td>
-                      <td >{item.phone}</td>
-                      <td >
-                        <button type='submit'> Editar</button>
-                      </td>
-                    </tr>
-                  </>
+                   <tr key={item.id}>
+                    {editUserId === item.id ? <EditForm /> : <ReadRows item={item}  />}
+                  </tr>
+                   </>
                 );
               })}
           </tbody>
         </table>
-</section>
-    </div>
+      </form>
+    </>
   )
 }
 

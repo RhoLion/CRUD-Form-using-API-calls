@@ -14,18 +14,25 @@ const Header = () => {
         <img src={menu} alt='menu' />
       </section>
 
-      <section className={styles.grupoS}>
+      <section className={styles.logo}>
         <img src={logo} alt='logo' />
       </section>
 
-      <section className={styles.user}>
-        {/* <section className={styles.names}> */}
-        <h5>Arantxa Sara <br></br>Castañeda Dorantes <br></br>Administrador</h5>
-        {/* </section> */}
+      <section className={styles.userContainer}>
+
+        <section className={styles.names}>
+        <h6>Arantxa Sara <br></br>Castañeda Dorantes <br></br>Administrador</h6>
+        </section>
+
       <section className={styles.pleca}>
-        <img src={user} alt='user' />
-        <img src={pleca} alt='pleca' />
+        <img src={user} alt='user' className={styles.img1}/>
+        <img src={pleca} alt='pleca' className={styles.img2} />
       </section>
+
+      <section className={styles.date}>
+        <p>16/Mar/2022 <br></br>12:00 hrs</p>
+      </section>
+      
       </section>
 
     </div>
