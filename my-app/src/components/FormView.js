@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 import Form from './Form';
 import ShowInfoTable from './ShowInfoTable';
+
 export const FormView = () => {
     const url = 'http://localhost:5000/userInfo';
     const [dataInfo, setDataInfo] = useState([]);
@@ -17,17 +18,12 @@ export const FormView = () => {
   useEffect(() => {
     fetchFormInformation(url);
   }, []);
-
-  
   
   return (
-    <div>
-
+    <>
     <Form dataInfo={dataInfo} setDataInfo={setDataInfo} />
-
     <ShowInfoTable dataInfo={dataInfo} />
-    </div>
-
+    </>
   )
 }
 export default FormView
