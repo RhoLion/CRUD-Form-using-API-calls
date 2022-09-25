@@ -26,11 +26,11 @@
 
 ## 3. Fucionalidad.
 
-En nuestra página web podrás visualizar un formulario que cuenta con validaciones que no permitirán avanzar en el proceso hasta que completes los campos obligatorios, al completar los campos podrás dar click en el botón Enviar. Los datos ingresados serán almacenados en una tabla que desplegará la información recolectada. Asímimo, podrás visualizar en la tabla un botón para editar los datos si hubo un error. Y a su vez, podrás visualizar a la derecha de la tabla, un botón para guardar los nuevos cambios.
+En nuestra página web podrás visualizar un formulario que cuenta con validaciones que no permitirán avanzar en el proceso hasta que completes los campos obligatorios, al completar los campos podrás dar click en el botón Enviar. Los datos ingresados serán almacenados en una tabla que desplegará la información recolectada. Asímimo, podrás visualizar un botón para editar los datos si hubo un error. Y a su vez, podrás visualizar a la derecha de la tabla, un botón para guardar los nuevos cambios.
 
 
-![pantalla1](/src/components/assets/result1.png)
-![pantalla2](/src/components/assets/result2.png)
+![pantalla1](/my-app/src/components/assets/result1.png)
+![pantalla2](/my-app/src/components/assets/result2.png)
 
 
 
