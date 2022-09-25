@@ -2,7 +2,7 @@
   "userInfo": [
     {
       "id": 1,
-      "name": "Ana María",
+      "name": "virginia",
       "lastname": "León",
       "surename": "Piña",
       "age": 20,
@@ -11,44 +11,44 @@
       "phone": 12312312
     },
     {
-      "name": "rocio",
-      "lastname": "qqqqqq",
-      "surename": "leon",
-      "age": "22",
-      "sex": "masculino",
+      "id": 6,
+      "name": "Ali",
+      "lastname": "Gonzalez",
+      "surename": "López",
+      "age": "55",
+      "sex": "Masculino",
       "email": "mesero1@gmail.com",
-      "phone": "5533600010",
-      "id": 6
+      "phone": "5236698752"
     },
     {
+      "id": 7,
       "name": "rocio",
       "lastname": "leon",
       "surename": "leon",
       "age": "12",
       "sex": "femenino",
       "email": "mesero1@gmail.com",
-      "phone": "5533600010",
-      "id": 7
+      "phone": "3578963562"
     },
     {
-      "name": "rocio",
-      "lastname": "perez",
+      "id": 8,
+      "name": "aura",
+      "lastname": "rosa",
+      "surename": "piña",
+      "age": "55",
+      "sex": "femenino",
+      "email": "mesero1@gmail.com",
+      "phone": "6565656565"
+    },
+    {
+      "id": 9,
+      "name": "Enrique",
+      "lastname": "Oviedo",
       "surename": "leon",
       "age": "11",
       "sex": "masculino",
       "email": "mesero1@gmail.com",
-      "phone": "5533600010",
-      "id": 8
-    },
-    {
-      "name": "rocio",
-      "lastname": "perez",
-      "surename": "leon",
-      "age": "11",
-      "sex": "masculino",
-      "email": "mesero1@gmail.com",
-      "phone": "5533600010",
-      "id": 9
+      "phone": "54656565656"
     },
     {
       "name": "rocio",
