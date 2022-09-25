@@ -2,7 +2,6 @@ import React from 'react'
 
 const ReadRows = ({ item, handleEditClick }) => {
 
- 
   return (
     <>
        <tr key={item.id}> 

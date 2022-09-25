@@ -51,21 +51,22 @@ const Form = () => {
       </section>
 
       <main className={styles.formContainer}>
-        <p>Favor de completar los siguientes campos. Los campos con <img src={star} alt='asteric' width='15px'/>  son obligatorios</p>
+        <p>Favor de completar los siguientes campos. Los campos con <img src={star} alt='asteric' width='15px' />  son obligatorios</p>
 
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Nombre(s):</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px' />Nombre(s):</label>
             <input
               type='text'
               name='name'
               minLength="3"
               maxLength="45"
               onChange={handleInputChange}
-              required></input>
+              pattern='[A-Za-z]'
+            ></input>
           </div>
           <div>
-            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Apellido paterno:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px' />Apellido paterno:</label>
             <input
               type='text'
               name='lastname'
@@ -75,7 +76,7 @@ const Form = () => {
               required></input>
           </div>
           <div>
-            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Apellido materno:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px' />Apellido materno:</label>
             <input
               type='text'
               name='surename'
@@ -85,7 +86,7 @@ const Form = () => {
               required></input>
           </div>
           <div>
-            <label htmlFor="name"><img src={star} alt='asteric' width='15px'/>Edad:</label>
+            <label htmlFor="name"><img src={star} alt='asteric' width='15px' />Edad:</label>
             <input
               type='number'
               name='age'
@@ -94,7 +95,7 @@ const Form = () => {
               required></input>
           </div>
           <div className={styles.sexo}>
-            <label className={styles.labelSex}><img src={star} alt='asteric' width='15px'/>Sexo:</label>
+            <label className={styles.labelSex}><img src={star} alt='asteric' width='15px' />Sexo:</label>
             <div className={styles.buttons}>
               <input
                 type="radio"
@@ -121,6 +122,7 @@ const Form = () => {
             <input
               type='email'
               name='email'
+
               onChange={handleInputChange}
             ></input>
           </div>
